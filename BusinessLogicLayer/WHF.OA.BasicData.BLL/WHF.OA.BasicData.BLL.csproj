@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c8b85681-1efd-4ef3-a363-5fbc07c6fcd2</ProjectGuid>
+    <ProjectGuid>{1C4DBBC6-5E3E-4DCC-9496-6B96F765C52F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WHF.OA.BasicData.BLL</RootNamespace>
