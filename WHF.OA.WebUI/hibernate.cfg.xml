@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory>
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <!-- <property name="connection.connection_string">
+      Data Source=172.29.140.156\fis_cmd;Initial Catalog=DEV_CMD;user=cmd;password=password1!;
+    </property>-->
+    <property name="connection.connection_string_name">DefaultConnection</property>
+    <property name="adonet.batch_size">10</property>
+    <property name="show_sql">true</property>
+    <property name="dialect">NHibernate.Dialect.MsSql2005Dialect</property>
+    <!--<property name="use_outer_join">false</property>-->
+    <property name="command_timeout">10</property>
+    <property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+    <!--<property name="proxyfactory.factory_class">
+      NHibernate.ByteCode.Castle.ProxyFactoryFactory,
+      NHibernate.ByteCode.Castle
+    </property>-->
+    <!--<mapping assembly="Founder.FIS.CMD.DataEntity"/>-->
+    <!--<mapping assembly="Founder.BasicModule.Permission"/>
+    <mapping assembly="Founder.BasicModule.Log"/>
+    <mapping assembly="Founder.BasicModule.Attachment"/>
+    <mapping assembly="Founder.BasicModule.SystemParameter"/>
+    <mapping assembly="Founder.BasicModule.DictionaryData"/>
+    <mapping assembly="Founder.BasicModule.EmailTemplate"/>
+    <mapping assembly="Founder.FIS.CMD.NewSite.DataEntity"/>
+    <mapping assembly="Founder.Framework.Workflow.Data"/>
+    <mapping assembly="Founder.FIS.CMD.Example.DataEntity"/>
+    <mapping assembly="Founder.FIS.CMD.BasicData.DataEntity"/>
+    <mapping assembly="Founde-->r.FIS.CMD.PreConstruct.DataEntity"/>
+  </session-factory>
+</hibernate-configuration>
