@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="WHF.OA.BasicData.Entity" namespace="WHF.OA.BasicData.Entity" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProvinceEntity" table="T_BD_Province" lazy="true" >
+    <id name="ID" column="ID" />
+    <property name="Name">
+      <column name="Name" sql-type="UDT_Nvarchar(100)" not-null="true" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="UDT_Int" not-null="false" />
+    </property>
+    <property name="OrderNo">
+      <column name="OrderNo" sql-type="UDT_Numeric(24,2)" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

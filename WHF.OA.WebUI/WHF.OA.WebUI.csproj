@@ -65,6 +65,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Views\BasicData\PersonManage.aspx" />
+    <Content Include="Views\BasicData\Province.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -143,6 +144,13 @@
     </Compile>
     <Compile Include="Views\BasicData\PersonManage.aspx.designer.cs">
       <DependentUpon>PersonManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BasicData\Province.aspx.cs">
+      <DependentUpon>Province.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BasicData\Province.aspx.designer.cs">
+      <DependentUpon>Province.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
