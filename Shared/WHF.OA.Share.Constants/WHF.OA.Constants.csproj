@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6C52D4BB-AA5F-4FE0-9A9C-9E6A3B76D459}</ProjectGuid>
+    <ProjectGuid>{BEF28FB7-7075-4D18-BD2C-3D23F263E624}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WHF.OA.Share.Constants</RootNamespace>
-    <AssemblyName>WHF.OA.Share.Constants</AssemblyName>
+    <RootNamespace>WHF.OA.Constants</RootNamespace>
+    <AssemblyName>WHF.OA.Constants</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
