@@ -5,11 +5,15 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{375A663D-0D49-4C5D-BF1F-65D51BC5EE22}</ProjectGuid>
+<<<<<<< HEAD
+    <ProjectGuid>{92CD08B3-C81E-4454-BDFC-536D4F1AF4BA}</ProjectGuid>
+=======
+    <ProjectGuid>{15D985F1-1246-4392-80F0-B18F076D347E}</ProjectGuid>
+>>>>>>> a53a287e4e8620b0eb613b2d84f107ea7fad8b9e
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WHF.OA.BasicData.BLL</RootNamespace>
-    <AssemblyName>WHF.OA.BasicData.BLL</AssemblyName>
+    <RootNamespace>WHF.OA.BasicData.DAL</RootNamespace>
+    <AssemblyName>WHF.OA.BasicData.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
