@@ -57,7 +57,13 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Common\UserControl\Navigator.ascx" />
+<<<<<<< HEAD
+    <Content Include="hibernate.cfg.xml">
+      <SubType>Designer</SubType>
+    </Content>
+=======
     <Content Include="hibernate.cfg.xml" />
+>>>>>>> 1fa5fbcac3cc2a425afe8c3c6f0df74e2c955047
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
