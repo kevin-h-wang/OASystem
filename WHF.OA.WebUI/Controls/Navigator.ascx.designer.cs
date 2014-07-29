@@ -7,99 +7,126 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace WHF.OA.WebUI.Views.BasicData {
+namespace Whf.TuoPu.Web.Controls {
     
     
-    public partial class PersonManage {
+    public partial class Navigator {
         
         /// <summary>
-        /// form1 控件。
+        /// divPaging 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divPaging;
         
         /// <summary>
-        /// lblTitle 控件。
+        /// lblCountPerPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Label lblCountPerPage;
         
         /// <summary>
-        /// lblEmpNO 控件。
+        /// lblTotalCount 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpNO;
+        protected global::System.Web.UI.WebControls.Label lblTotalCount;
         
         /// <summary>
-        /// txtEmpNO 控件。
+        /// lblCurrentPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmpNO;
+        protected global::System.Web.UI.WebControls.Label lblCurrentPage;
         
         /// <summary>
-        /// lblEmpName 控件。
+        /// lblTotalPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpName;
+        protected global::System.Web.UI.WebControls.Label lblTotalPage;
         
         /// <summary>
-        /// txtEmpName 控件。
+        /// txtPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmpName;
+        protected global::System.Web.UI.WebControls.TextBox txtPage;
         
         /// <summary>
-        /// btnQuery 控件。
+        /// btnGO 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnQuery;
+        protected global::System.Web.UI.WebControls.Button btnGO;
         
         /// <summary>
-        /// gvTest 控件。
+        /// lbtnFirstPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvTest;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnFirstPage;
         
         /// <summary>
-        /// Navigator 控件。
+        /// lbtnPrePage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::Whf.TuoPu.Web.Controls.Navigator Navigator;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnPrePage;
         
         /// <summary>
-        /// btnAdd 控件。
+        /// lbtnNextPage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnNextPage;
+        
+        /// <summary>
+        /// lbtnLastPage 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtnLastPage;
+        
+        /// <summary>
+        /// lblRedirect 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRedirect;
+        
+        /// <summary>
+        /// drpPageIndex 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drpPageIndex;
     }
 }

@@ -10,7 +10,7 @@
 namespace WHF.OA.WebUI.Views.BasicData {
     
     
-    public partial class PersonManage {
+    public partial class Editperson {
         
         /// <summary>
         /// form1 控件。
@@ -31,67 +31,76 @@ namespace WHF.OA.WebUI.Views.BasicData {
         protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// lblEmpNO 控件。
+        /// lblFuncName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpNO;
+        protected global::System.Web.UI.WebControls.Label lblFuncName;
         
         /// <summary>
-        /// txtEmpNO 控件。
+        /// txtFuncName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmpNO;
+        protected global::System.Web.UI.WebControls.TextBox txtFuncName;
         
         /// <summary>
-        /// lblEmpName 控件。
+        /// lblFuncLevel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpName;
+        protected global::System.Web.UI.WebControls.Label lblFuncLevel;
         
         /// <summary>
-        /// txtEmpName 控件。
+        /// drpLevel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmpName;
+        protected global::System.Web.UI.WebControls.DropDownList drpLevel;
         
         /// <summary>
-        /// btnQuery 控件。
+        /// lblFuncUrl 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnQuery;
+        protected global::System.Web.UI.WebControls.Label lblFuncUrl;
         
         /// <summary>
-        /// gvTest 控件。
+        /// txtFuncUrl 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvTest;
+        protected global::System.Web.UI.WebControls.TextBox txtFuncUrl;
         
         /// <summary>
-        /// Navigator 控件。
+        /// lblFuncMemo 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::Whf.TuoPu.Web.Controls.Navigator Navigator;
+        protected global::System.Web.UI.WebControls.Label lblFuncMemo;
+        
+        /// <summary>
+        /// txtFuncMemo 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFuncMemo;
         
         /// <summary>
         /// btnAdd 控件。
@@ -101,5 +110,14 @@ namespace WHF.OA.WebUI.Views.BasicData {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// btnReturn 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReturn;
     }
 }

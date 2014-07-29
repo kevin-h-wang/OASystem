@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using WHF.OA.BasicData.Entity;
+using WHF.OA.BasicData.BLL;
 //using Whf.TuoPu.Controller;
 
 namespace WHF.OA.WebUI.Views.BasicData
@@ -16,6 +18,7 @@ namespace WHF.OA.WebUI.Views.BasicData
             if (!IsPostBack)
             {
                 //this.BindGrid(1);
+                this.GetPerson();
             }
         }
 
@@ -39,5 +42,12 @@ namespace WHF.OA.WebUI.Views.BasicData
         //    this.gvTest.DataSource = dst.Tables[0];
         //    this.gvTest.DataBind();
         //}
+
+        private void GetPerson()
+        {
+            string personID = "04F4E255-BE6A-464B-AB2C-7D3FE6981DC2";
+            TBLPERSONEntity entity = new PersonBLL().GetPerson(personID);
+            txtEmpName.Text = entity.personaccount;
+        }
     }
 }

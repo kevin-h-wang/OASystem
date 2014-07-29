@@ -7,11 +7,49 @@ using System.Web.UI.WebControls;
 
 namespace WHF.OA.WebUI
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class _Default : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                this.OnInit(e);
+            }
+        }
 
+        protected void ImageLogin_Click(object sender, ImageClickEventArgs e)
+        {
+            if (string.IsNullOrEmpty(this.txtUserName.Text.Trim()))
+            {
+                this.lblErrorInfo.Text = "用户名不能为空！";
+                return;
+            }
+            if (string.IsNullOrEmpty(this.txtUserPwd.Text.Trim()))
+            {
+                this.lblErrorInfo.Text = "用户密码不能为空！";
+                return;
+            }
+            if (string.IsNullOrEmpty(this.txtValidCode.Text.Trim()))
+            {
+                this.lblErrorInfo.Text = "验证码不能为空！";
+                return;
+            }
+            //PersonController pControl = new PersonController();
+            //string userName = this.txtUserName.Text.Trim();
+            //string passWord = WhfEncryption.DESEnCrypt(this.txtUserPwd.Text.Trim());
+            //PersonEntity pe = pControl.GetPersonInfo(userName, passWord);
+            //if (pe == null)
+            //{
+            //    this.lblErrorInfo.Text = "用户名或密码不正确，请重新输入！";
+            //    return;
+            //}
+            //if (Session["ValidationCode"] != null && Session["ValidationCode"].ToString() != this.txtValidCode.Text.Trim())
+            //{
+            //    this.lblErrorInfo.Text = "验证码不正确，请重新输入！";
+            //    return;
+            //}
+            //base.PersonEntity = pe;
+            Response.Redirect("Views/Portal/index.html");
         }
     }
 }

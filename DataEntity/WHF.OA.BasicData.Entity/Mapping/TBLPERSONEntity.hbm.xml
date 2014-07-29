@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="WHF.OA.BasicData.Entity" namespace="WHF.OA.BasicData.Entity" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TBLPERSONEntity" table="TBLPERSON" lazy="true" >
+    <id name="oid" column="oid" />
+    <property name="personcode">
+      <column name="personcode" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personaccount">
+      <column name="personaccount" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personpassword">
+      <column name="personpassword" sql-type="nvarchar(100)" not-null="true" />
+    </property>
+    <property name="personname">
+      <column name="personname" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personsex">
+      <column name="personsex" sql-type="int" not-null="true" />
+    </property>
+    <property name="personstatus">
+      <column name="personstatus" sql-type="int" not-null="true" />
+    </property>
+    <property name="persontype">
+      <column name="persontype" sql-type="int" not-null="true" />
+    </property>
+    <property name="personofficephone">
+      <column name="personofficephone" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personmobilephone">
+      <column name="personmobilephone" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personemail">
+      <column name="personemail" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="personmemo">
+      <column name="personmemo" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="cuser">
+      <column name="cuser" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="cdate">
+      <column name="cdate" sql-type="datetime" not-null="true" />
+    </property>
+    <property name="muser">
+      <column name="muser" sql-type="nvarchar(40)" not-null="true" />
+    </property>
+    <property name="mdate">
+      <column name="mdate" sql-type="datetime" not-null="true" />
+    </property>
+    <property name="mpwdtime">
+      <column name="mpwdtime" sql-type="datetime" not-null="true" />
+    </property>
+    <property name="personpasswordquestion">
+      <column name="personpasswordquestion" sql-type="nvarchar(100)" not-null="true" />
+    </property>
+    <property name="personpasswordanswer">
+      <column name="personpasswordanswer" sql-type="nvarchar(100)" not-null="true" />
+    </property>
+    <property name="addition1">
+      <column name="addition1" sql-type="nvarchar(50)" not-null="false" />
+    </property>
+    <property name="addition2">
+      <column name="addition2" sql-type="nvarchar(50)" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

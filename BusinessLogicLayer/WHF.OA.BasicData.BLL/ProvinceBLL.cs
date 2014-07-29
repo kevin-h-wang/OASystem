@@ -8,5 +8,6 @@ namespace WHF.OA.BasicData.BLL
 {
     public class ProvinceBLL : BussinessLogicBase
     {
+
     }
 }

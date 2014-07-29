@@ -5,7 +5,7 @@
     <!-- <property name="connection.connection_string">
       Data Source=172.29.140.156\fis_cmd;Initial Catalog=DEV_CMD;user=cmd;password=password1!;
     </property>-->
-    <property name="connection.connection_string_name">DefaultConnection</property>
+    <property name="connection.connection_string_name">DefaultConnection1</property>
     <property name="adonet.batch_size">10</property>
     <property name="show_sql">true</property>
     <property name="dialect">NHibernate.Dialect.MsSql2005Dialect</property>
@@ -25,8 +25,7 @@
     <mapping assembly="Founder.BasicModule.EmailTemplate"/>
     <mapping assembly="Founder.FIS.CMD.NewSite.DataEntity"/>
     <mapping assembly="Founder.Framework.Workflow.Data"/>
-    <mapping assembly="Founder.FIS.CMD.Example.DataEntity"/>
-    <mapping assembly="Founder.FIS.CMD.BasicData.DataEntity"/>
-    <mapping assembly="Founde-->r.FIS.CMD.PreConstruct.DataEntity"/>
+    <mapping assembly="Founder.FIS.CMD.Example.DataEntity"/>-->
+    <mapping assembly="WHF.OA.BasicData.Entity"/>
   </session-factory>
 </hibernate-configuration>

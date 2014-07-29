@@ -42,10 +42,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProvinceEntity.cs" />
+    <Compile Include="TBLPERSONEntity.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Mapping\ProvinceEntity.hbm.xml" />
+    <EmbeddedResource Include="Mapping\TBLPERSONEntity.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
