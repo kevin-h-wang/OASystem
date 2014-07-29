@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WHF.OA.NHibernate;
 
-namespace WHF.OA.BasicData.BLL
+namespace WHF.OA.Base
 {
-    class Class1
+    public class BussinessLogicBase : NHDataAccess
     {
+
     }
 }

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WHF.OA.Base;
 
-namespace WHF.OA.Constants
+namespace WHF.OA.BasicData.BLL
 {
-    class Class1
+    public class ProvinceBLL : BussinessLogicBase
     {
     }
 }
