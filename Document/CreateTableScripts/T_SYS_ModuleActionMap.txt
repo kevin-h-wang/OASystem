@@ -1,0 +1,36 @@
+USE [OA_DEV]
+GO
+
+/****** Object:  Table [dbo].[T_SYS_ModuleActionMap]    Script Date: 07/30/2014 23:04:29 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_SYS_ModuleActionMap](
+	[ID] [dbo].[UDT_Guid] NOT NULL,
+	[ModuleID] [dbo].[UDT_Guid] NULL,
+	[ActionID] [dbo].[UDT_Guid] NULL,
+ CONSTRAINT [PK_omdSystemModuleActionMap] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[T_SYS_ModuleActionMap]  WITH CHECK ADD  CONSTRAINT [FK_OMDSYSMA_Action] FOREIGN KEY([ActionID])
+REFERENCES [dbo].[T_SYS_Action] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_ModuleActionMap] CHECK CONSTRAINT [FK_OMDSYSMA_Action]
+GO
+
+ALTER TABLE [dbo].[T_SYS_ModuleActionMap]  WITH CHECK ADD  CONSTRAINT [FK_OMDSYSMA_Module] FOREIGN KEY([ModuleID])
+REFERENCES [dbo].[T_SYS_Module] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_ModuleActionMap] CHECK CONSTRAINT [FK_OMDSYSMA_Module]
+GO
+

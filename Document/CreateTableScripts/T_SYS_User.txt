@@ -1,0 +1,91 @@
+USE [OA_DEV]
+GO
+
+/****** Object:  Table [dbo].[T_SYS_User]    Script Date: 07/30/2014 23:05:22 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_SYS_User](
+	[ID] [dbo].[UDT_Guid] NOT NULL,
+	[LoginName] [dbo].[UDT_Nvarchar(100)] NULL,
+	[CnName] [dbo].[UDT_Nvarchar(100)] NULL,
+	[EnName] [dbo].[UDT_Nvarchar(100)] NULL,
+	[Code] [dbo].[UDT_Nvarchar(100)] NULL,
+	[Password] [dbo].[UDT_Nvarchar(100)] NULL,
+	[MobilePhone] [dbo].[UDT_Nvarchar(100)] NULL,
+	[Telephone] [dbo].[UDT_Nvarchar(100)] NULL,
+	[EMail] [dbo].[UDT_Nvarchar(400)] NULL,
+	[Fax] [dbo].[UDT_Nvarchar(100)] NULL,
+	[ElecSignature] [dbo].[UDT_Nvarchar(400)] NULL,
+	[Status] [dbo].[UDT_Int] NULL,
+	[Gender] [dbo].[UDT_Int] NULL,
+	[JoinDate] [dbo].[UDT_DateTime] NULL,
+	[WorkTel] [dbo].[UDT_Nvarchar(100)] NULL,
+	[InnerTel] [dbo].[UDT_Nvarchar(100)] NULL,
+	[PicPath] [dbo].[UDT_Nvarchar(400)] NULL,
+	[Type] [dbo].[UDT_Int] NULL,
+ CONSTRAINT [PK_omdUser] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户登陆名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'LoginName'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户中文名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'CnName'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户英文名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'EnName'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'员工编号' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Code'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'密码' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Password'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'手机号码' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'MobilePhone'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'电话' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Telephone'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'电子邮件' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'EMail'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'传真' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Fax'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'电子签名存放路径' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'ElecSignature'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'状态；外键，关联码表T_SYS_Enum_Status中的ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Status'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'性别' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Gender'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'入职日期' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'JoinDate'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'工作电话' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'WorkTel'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'内部电话' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'InnerTel'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'照片地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'PicPath'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户类型；0-内部用户； 1-外部用户' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User', @level2type=N'COLUMN',@level2name=N'Type'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户信息表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_User'
+GO
+

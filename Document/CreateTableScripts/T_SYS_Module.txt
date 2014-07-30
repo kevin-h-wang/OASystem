@@ -1,0 +1,25 @@
+USE [OA_DEV]
+GO
+
+/****** Object:  Table [dbo].[T_SYS_Module]    Script Date: 07/30/2014 23:04:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_SYS_Module](
+	[ID] [dbo].[UDT_Guid] NOT NULL,
+	[Code] [dbo].[UDT_Int] NULL,
+	[Name] [dbo].[UDT_Nvarchar(100)] NULL,
+	[ParentID] [dbo].[UDT_Guid] NULL,
+	[URL] [dbo].[UDT_Nvarchar(400)] NULL,
+	[Description] [dbo].[UDT_Nvarchar(400)] NULL,
+ CONSTRAINT [PK_omdSystemModule] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+

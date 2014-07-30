@@ -1,0 +1,37 @@
+USE [OA_DEV]
+GO
+
+/****** Object:  Table [dbo].[T_SYS_Permission]    Script Date: 07/30/2014 23:04:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_SYS_Permission](
+	[ID] [dbo].[UDT_Guid] NOT NULL,
+	[RoleID] [dbo].[UDT_Guid] NULL,
+	[ModuleActionID] [dbo].[UDT_Guid] NULL,
+	[Status] [dbo].[UDT_Int] NULL,
+ CONSTRAINT [PK_omdSystemPrivilege] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[T_SYS_Permission]  WITH CHECK ADD  CONSTRAINT [FK_Permission_ModuleAction] FOREIGN KEY([ModuleActionID])
+REFERENCES [dbo].[T_SYS_ModuleActionMap] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_Permission] CHECK CONSTRAINT [FK_Permission_ModuleAction]
+GO
+
+ALTER TABLE [dbo].[T_SYS_Permission]  WITH CHECK ADD  CONSTRAINT [FK_Permission_ROLE] FOREIGN KEY([RoleID])
+REFERENCES [dbo].[T_SYS_Role] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_Permission] CHECK CONSTRAINT [FK_Permission_ROLE]
+GO
+

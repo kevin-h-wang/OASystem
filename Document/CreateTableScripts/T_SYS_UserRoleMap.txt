@@ -1,0 +1,52 @@
+USE [OA_DEV]
+GO
+
+/****** Object:  Table [dbo].[T_SYS_UserRoleMap]    Script Date: 07/30/2014 23:05:38 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_SYS_UserRoleMap](
+	[ID] [dbo].[UDT_Guid] NOT NULL,
+	[UserID] [dbo].[UDT_Guid] NULL,
+	[RoleID] [dbo].[UDT_Guid] NULL,
+	[IsFirstRole] [dbo].[UDT_Bit] NULL,
+ CONSTRAINT [PK_T_SYS_UserRoleMap] PRIMARY KEY NONCLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户角色ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_UserRoleMap', @level2type=N'COLUMN',@level2name=N'ID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_UserRoleMap', @level2type=N'COLUMN',@level2name=N'UserID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'角色ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_UserRoleMap', @level2type=N'COLUMN',@level2name=N'RoleID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'是否首选角色；' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_UserRoleMap', @level2type=N'COLUMN',@level2name=N'IsFirstRole'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'用户角色表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'T_SYS_UserRoleMap'
+GO
+
+ALTER TABLE [dbo].[T_SYS_UserRoleMap]  WITH CHECK ADD  CONSTRAINT [FK_USERR_REFERENCE_OMDROLE] FOREIGN KEY([RoleID])
+REFERENCES [dbo].[T_SYS_Role] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_UserRoleMap] CHECK CONSTRAINT [FK_USERR_REFERENCE_OMDROLE]
+GO
+
+ALTER TABLE [dbo].[T_SYS_UserRoleMap]  WITH CHECK ADD  CONSTRAINT [FK_USERR_REFERENCE_OMDUSER] FOREIGN KEY([UserID])
+REFERENCES [dbo].[T_SYS_User] ([ID])
+GO
+
+ALTER TABLE [dbo].[T_SYS_UserRoleMap] CHECK CONSTRAINT [FK_USERR_REFERENCE_OMDUSER]
+GO
+
